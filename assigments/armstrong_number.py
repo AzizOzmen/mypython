@@ -20,3 +20,37 @@
 # 153.87    or 153,87	 It is an invalid entry. Don't use non-numeric, float, or negative values!
 # one	    It is an invalid entry. Don't use non-numeric, float, or negative values!
 # 121	    121 is not an Armstrong number
+while True:
+    num = input("Please enter a number: ")
+    if num.isdecimal() and int(num) > 0:
+        num_list = list(num)
+        exp = len(num)
+        toplam = 0
+        for i in num_list:
+            toplam += int(i) ** exp
+        if toplam == int(num):
+            print(f"{num} is an Armstrong number.")
+        else:
+            print(f"{num} is not an Armstrong number.")
+        break
+    else:
+        print("Please enter a positive number as int")
+
+
+while True:
+    number = input("Enter a number: ")
+    if number.isdecimal() and int(number) > 0: # or not(type(number) is int)):
+        number_list = list(number)
+        exp = len(number)
+        sum_number = 0
+        for i in number_list:
+            sum_number += int(i) ** exp
+        if sum_number == int(number):    
+            print(f"{number} is an Armstrong number.")
+        else:
+            print(f"{number} is not an Armstrong number.")
+        break
+    else: 
+        print("negatif")
+
+
