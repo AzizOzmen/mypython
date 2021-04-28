@@ -19,11 +19,17 @@
 # so to get more benefit from this assignment, 
 # try to complete this task on your own. 
 
-number = int(input("Enter a number: "))
-for i in range(2, number):
-    if number % i == 0:
-        print("prime degil")
-        break
-    else:
-        print("prime")
-        break
+number = input("Enter a number: ")
+i = 2
+if number.isdecimal():
+    number = int(number)
+    while number > i:
+        if number % i == 0:
+            print(f"{number} is not a prime number")
+            break
+        else:
+            i += 1
+    if i == number:
+        print(f"{number} is a prime number")
+else:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
