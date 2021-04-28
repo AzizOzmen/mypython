@@ -21,7 +21,7 @@
 
 number = input("Enter a number: ")
 i = 2
-if number.isdecimal():
+if number.isdigit():
     number = int(number)
     while number > i:
         if number % i == 0:
@@ -33,3 +33,15 @@ if number.isdecimal():
         print(f"{number} is a prime number")
 else:
     print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+
+print("Josephs answer")
+
+n = int(input("Enter a number to check if it is a prime number."))
+count = 0
+for i in range(1, n+1) :
+    if n % i == 0 :
+        count += 1
+if (n == 0) or (n == 1) or (count >=3) :
+    print(n, "is not a prime number.")
+else:
+    print(n, "is a prime number")

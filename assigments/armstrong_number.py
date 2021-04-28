@@ -22,7 +22,7 @@
 # 121	    121 is not an Armstrong number
 while True:
     number = input("Enter a number: ")
-    if number.isdecimal() and int(number) > 0: # or not(type(number) is int)):
+    if number.isdigit() and int(number) > 0: # or not(type(number) is int)):
         number_list = list(number)
         exp = len(number)
         sum_number = 0
