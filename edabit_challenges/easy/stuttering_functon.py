@@ -4,9 +4,7 @@
 
 # Examples
 # stutter("incredible") ➞ "in... in... incredible?"
-
 # stutter("enthusiastic") ➞ "en... en... enthusiastic?"
-
 # stutter("outstanding") ➞ "ou... ou... outstanding?"
 
 def stutter(word):

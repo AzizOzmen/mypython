@@ -65,4 +65,3 @@ count, fruit, price = (2, 'apple', 3.5)
 
 college_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']
 print(list(enumerate(college_years, 2019)))
-
