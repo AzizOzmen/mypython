@@ -15,20 +15,23 @@
 # relation_to_luke("Leia") ➞ "Luke, I am your sister."
 # relation_to_luke("Han") ➞ "Luke, I am your brother in law."
 
-
-
-def relation_to_luke(relationship):
-    relationships = {"Darth Vader" : "father",
+relationships = {"Darth Vader" : "father",
                 "Leia" : "sister",
                 "Han"	: "brother in law",
                 "R2D2" : "droid"}
-    key_list = list(relationships.keys())
-    val_list = list(relationships.values())
-    print(key_list)
-    print(val_list)
 
-    # print(f"Luke, I am your {relationship.key()}.")
+def relation_to_luke(relationship):
+    print(f"Luke, I am your {relationships[relationship]}.")
 
 relation_to_luke("Darth Vader")
 relation_to_luke("Leia")
 relation_to_luke("Han")
+
+print("----")
+def relation_to_luke2(name):
+    family={'Darth Vader':'father','Leia':'sister','Han':'brother in law','R2D2':'droid'}
+    return  "Luke, I am your {}.".format(family[name])
+
+print(relation_to_luke2('Leia'))
+print(relation_to_luke2("Darth Vader"))
+print(relation_to_luke2("Han"))

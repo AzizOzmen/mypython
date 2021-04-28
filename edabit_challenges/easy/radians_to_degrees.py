@@ -23,8 +23,14 @@ print("----")
 # 2.
 import math
 def radians_to_degrees(rad):
-	print(round(math.degrees(rad),1))  #with round function
+	return round(math.degrees(rad),1)  #with round function
 
-radians_to_degrees(1)
-radians_to_degrees(20)
-radians_to_degrees(50)
+x = radians_to_degrees(20)
+print(x)
+print(radians_to_degrees(20))
+print(radians_to_degrees(50))
+
+def multiply(a, b):
+    return a * b
+
+print(multiply(x, radians_to_degrees(1))/radians_to_degrees(1))

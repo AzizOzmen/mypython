@@ -11,9 +11,13 @@
 # factorial(13) ➞ 6227020800
 
 def factorial(number):
-    for i in range(1,number):
-        result = i * (i)
-        print(result)
+    numbers_in_list = []
+    for i in range(1,number+1):
+        numbers_in_list.append(i)
+        result = 1
+        for j in numbers_in_list:
+            result = j * result 
+    print(result)
         
 factorial(3)
 factorial(5)
