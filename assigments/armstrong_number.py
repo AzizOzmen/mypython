@@ -21,23 +21,6 @@
 # one	    It is an invalid entry. Don't use non-numeric, float, or negative values!
 # 121	    121 is not an Armstrong number
 while True:
-    num = input("Please enter a number: ")
-    if num.isdecimal() and int(num) > 0:
-        num_list = list(num)
-        exp = len(num)
-        toplam = 0
-        for i in num_list:
-            toplam += int(i) ** exp
-        if toplam == int(num):
-            print(f"{num} is an Armstrong number.")
-        else:
-            print(f"{num} is not an Armstrong number.")
-        break
-    else:
-        print("Please enter a positive number as int")
-
-
-while True:
     number = input("Enter a number: ")
     if number.isdecimal() and int(number) > 0: # or not(type(number) is int)):
         number_list = list(number)
@@ -49,8 +32,14 @@ while True:
             print(f"{number} is an Armstrong number.")
         else:
             print(f"{number} is not an Armstrong number.")
-        break
+        new_check = input("If would you like to check an other number enter 'yes': ")
+        new_check = new_check.lower()
+        if new_check == "yes":
+            continue
+        else:
+            print("See you next time, thank you")
+            break
     else: 
-        print("negatif")
+        print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
 
 
