@@ -19,3 +19,18 @@
 # Note that : This question is famous on the web, 
 # so to get more benefit from this assignment, 
 # try to complete this task on your own.
+
+
+
+n = int(input("Enter an end point to check prime numbers: "))
+prime_numbers = []
+for i in range(1, n+1) :
+    count = 0
+    for j in range(1, i+1):
+        if i % j == 0 :
+            count += 1
+    if (i == 0) or (i == 1) or (count >=3) :
+        continue
+    else:
+        prime_numbers.append(i)
+print(prime_numbers, "are prime numbers")
