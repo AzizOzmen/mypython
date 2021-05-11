@@ -19,3 +19,17 @@
 # Output each value on a separate line.
 # Note that : This question is famous on the web, so to get more benefit 
 # from this assignment, try to complete this task on your own.
+
+def fizzbuzz(number):
+    for i in range(1, number+1):
+        if not i % 15:
+            print("FizzBuzz")
+        elif not i % 5:
+            print("Buzz")
+        elif not i % 3:
+            print("Fizz")
+        else:
+            print(i)
+
+fizzbuzz(100)
+        

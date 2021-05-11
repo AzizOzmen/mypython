@@ -17,3 +17,11 @@
 # itchen
 # print(missing_char('kitchen', 4))
 # kitcen
+def missing_char(word, n):
+    return word.replace(word[n], "")
+
+
+
+print(missing_char('kitchen', 1))
+print(missing_char('kitchen', 0))
+print(missing_char('kitchen', 4))

@@ -18,3 +18,13 @@
 # not x
 # print(not_string('not bad'))
 # not bad
+
+def not_string(word):
+    if word.find("not"):
+        return "not " + word
+    else:
+        return word
+
+print(not_string('sugar'))
+print(not_string('x'))
+print(not_string('not bad'))
